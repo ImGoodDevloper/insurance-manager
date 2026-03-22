@@ -40,12 +40,12 @@ services:
     depends_on:
       - spring-backend
 ```
-3.**執行啟動指令**:
+3.**執行啟動指令**:<br>
 docker-compose -f docker-compose-insurance-v1.yml up -d
 
 4.**啟動後即可進行接下來的測試**
 
-5.**測試完畢的結束指令**:
+5.**測試完畢的結束指令**:<br>
 為了避免伺服器占用資源，請輸入 docker-compose -f docker-compose-insurance-v1.yml down -v 以關閉容器
 
 ---
@@ -126,7 +126,7 @@ UPDATE Policy SET status = 'ACTIVE WHERE policy_id = 2026032218325517
 
 ##  API 測試流程 (依序執行)
 
-本系統 API 均受 JWT 保護，<br>測試前請先執行 **登入** 並於 Header 加入 `Authorization: Bearer <Token>`。(token使用期限預設1小時)
+本系統 API 均受 JWT 保護，<br>測試前請先執行 **登入** 並於 Header 加入 `Authorization: Bearer <Token>`。(token使用期限預設 60min)
 
 Postman打 http://localhost:99/login
 
