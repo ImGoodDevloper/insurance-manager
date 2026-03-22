@@ -126,7 +126,7 @@ UPDATE Policy SET status = 'ACTIVE WHERE policy_id = 2026032218325517
 
 ##  API 測試流程 (依序執行)
 
-本系統 API 均受 JWT 保護，<br>測試前請先執行 **登入** 並於 Header 加入 `Authorization: Bearer <Token>`。(token使用期限預設 60min)
+本系統 API 均受 JWT 保護，<br>測試前請先執行 **登入** 並於 Header 加入 `Authorization: Bearer <Token>`。(token使用期限預設 **60min**)
 
 Postman打 http://localhost:99/login
 
