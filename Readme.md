@@ -67,6 +67,8 @@ docker-compose -f docker-compose-insurance-v1.yml up -d
 2. **Policy (保單表)**: 儲存保單資訊，透過 `customer_id` 與客戶關聯。
 
 可直接連線 http://localhost:81/ 進入 H2 db網頁
+<img width="1469" height="441" alt="image" src="https://github.com/user-attachments/assets/47466831-ab56-44a4-8c49-ea5f156cf240" />
+
 
 - **Driver Class**: org.h2.Driver
 - **JDBC URL**: jdbc:h2:tcp://localhost:1521//opt/h2-data/insurance_db
@@ -239,10 +241,14 @@ http://localhost:99/api/policies/2026032223430925/status
     帳號：tester
     密碼：test123
 
+<img width="1867" height="920" alt="image" src="https://github.com/user-attachments/assets/f4779bfc-edb6-43e6-858a-36445b97fff9" />
+
+
 2.**新增客戶:** 登入後點擊「完成開戶」按鈕即可新增客戶資料。
+<img width="1840" height="933" alt="image" src="https://github.com/user-attachments/assets/198aab34-2aa1-465c-a508-0819ba4acede" />
 
-3.**建立保單:** 新增完成後，系統會自動將 客戶 ID 帶入下方的保單申請表單。
+3.**建立保單:** 新增客戶完成後，系統會自動將 客戶 ID 帶入下方的保單申請表單，確認保單資料無誤後點擊「提交保單」。
+<img width="1804" height="938" alt="image" src="https://github.com/user-attachments/assets/89d7ffaa-281b-4509-86dd-d6ce9a48002a" />
 
-4.**提交審核:** 確認保單資料無誤後點擊提交。
-
-5.**保單管理:** 透過查詢功能找到保單，並可針對該保單進行 狀態變更（如：核保、作廢）。
+4.**保單管理:** 透過查詢功能找到保單，並可針對該保單進行 狀態變更（如：核保、作廢）。
+<img width="1259" height="432" alt="image" src="https://github.com/user-attachments/assets/8d10dbd2-8a35-47a4-bc8c-205f70e6b250" />
